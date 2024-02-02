@@ -28,6 +28,7 @@ struct _3D_POINT {
 struct _3D_TRIANGLE {
     _3D_POINT a, b, c;
 };
+vector<_3D_TRIANGLE>img;
 // Store states of drawing:
 int drMode = 0;//0 means observe (use wasd+zx+ +- to move)
 // 1 means add a point for a triangle
