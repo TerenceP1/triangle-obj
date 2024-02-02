@@ -21,7 +21,12 @@ INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
 // Stores triangles in a 3d enviornment:
 struct _3D_POINT {
-
+    int x;
+    int y;
+    int z;
+};
+struct _3D_TRIANGLE {
+    _3D_POINT a, b, c;
 };
 // Store states of drawing:
 int drMode = 0;//0 means observe (use wasd+zx+ +- to move)
